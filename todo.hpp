@@ -9,6 +9,7 @@ class TodoList {
 
     private:
       vector <string> tasks;
+      vector <string> completedTasks;
     
     public:
       void add(string task);
