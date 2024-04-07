@@ -16,10 +16,12 @@ int main() {
   list.complete("Buy eggs");
 
   list.all(); // Pretty prints a list of each of the four tasks above
-  list.complete(); // Pretty prints the task "Buy eggs"
+  list.complete(); // Pretty prints the task "Buy eggs"  
   list.incomplete(); // Pretty prints the tasks "Buy milk",
                      // "Prepare a lesson for CSC 122", and "Sow beet seeds"
 
+  cout << "\n" << endl;
+  
   list.clear();
 
   list.all(); // Pretty prints a message saying that the list is empty

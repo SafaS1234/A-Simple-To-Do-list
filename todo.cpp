@@ -10,7 +10,7 @@ void TodoList::add(string task)
     tasks.push_back(task);
 }
 
-void TodoList::complete (string task)
+void TodoList::complete(string task)
 {
     vector<string>:: iterator itr;
 
@@ -19,7 +19,7 @@ void TodoList::complete (string task)
         if(*itr == task)
         {
             tasks.erase(itr);
-            break;
+            return;
         }
     }
 }
@@ -33,6 +33,8 @@ void TodoList::all()
         cout << "The list is empty." << endl;
         return;
     }
+
+    cout << "All tasks: " << endl;
 
     for (itr = tasks.begin(); itr != tasks.end(); itr++)
     { 
@@ -50,6 +52,8 @@ void TodoList::complete()
         return;
     }
 
+    cout << "\nCompleted tasks: " << endl;
+
     for (itr = tasks.begin(); itr != tasks.end(); itr++)
     { 
         cout << *itr << endl;
@@ -66,6 +70,8 @@ void TodoList::incomplete()
         return;
     }
 
+    cout << "\nIncomplete tasks: " << endl;
+    
     for (itr = tasks.begin(); itr != tasks.end(); itr++)
     { 
         cout << *itr << endl;
