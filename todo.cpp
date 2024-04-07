@@ -1,7 +1,4 @@
 #include "todo.hpp"
-#include <iostream>
-#include <iterator>
-#include <vector>
 
 using namespace std;
 
@@ -14,7 +11,7 @@ void TodoList::complete(string task)
 {
     vector<string>:: iterator itr;
 
-    for (itr = tasks.begin(); itr != tasks.end(); itr++)
+    for (itr = tasks.begin(); itr < tasks.end(); itr++)
     {
         if(*itr == task)
         {
@@ -36,7 +33,7 @@ void TodoList::all()
 
     cout << "All tasks: " << endl;
 
-    for (itr = tasks.begin(); itr != tasks.end(); itr++)
+    for (itr = tasks.begin(); itr < tasks.end(); itr++)
     { 
         cout << *itr << endl;
     }
@@ -54,7 +51,7 @@ void TodoList::complete()
 
     cout << "\nCompleted tasks: " << endl;
 
-    for (itr = tasks.begin(); itr != tasks.end(); itr++)
+    for (itr = tasks.begin(); itr < tasks.end(); itr++)
     { 
         cout << *itr << endl;
     }
@@ -72,7 +69,7 @@ void TodoList::incomplete()
 
     cout << "\nIncomplete tasks: " << endl;
     
-    for (itr = tasks.begin(); itr != tasks.end(); itr++)
+    for (itr = tasks.begin(); itr < tasks.end(); itr++)
     { 
         cout << *itr << endl;
     }
