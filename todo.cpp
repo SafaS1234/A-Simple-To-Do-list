@@ -67,13 +67,13 @@ void TodoList::incomplete()
 {
     vector<string>:: iterator itr;
     
+    cout << "\nIncomplete tasks: " << endl;
+
     if (tasks.empty())
     {
         cout << "The incomplete list is empty." << endl;
         return;
     }
-
-    cout << "\nIncomplete tasks: " << endl;
     
     for (itr = tasks.begin(); itr < tasks.end(); itr++)
     { 

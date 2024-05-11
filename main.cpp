@@ -22,4 +22,6 @@ int main() {
   list.clear();
 
   list.all(); // Pretty prints a message saying that the list is empty
+  list.complete(); // Pretty prints a message saying that the list is empty
+  list.incomplete(); // Pretty prints a message saying that the list is empty
 }
