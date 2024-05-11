@@ -13,10 +13,9 @@ class TodoList {
     
     public:
       void add(string task);
-      void complete (string task);
+      void complete(string task);
       void all();
       void complete();
       void incomplete();
       void clear();
-
 };
